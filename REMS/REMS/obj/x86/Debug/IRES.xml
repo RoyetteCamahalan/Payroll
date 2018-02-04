@@ -1,0 +1,180 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IRES
+</name>
+</assembly>
+<members>
+<member name="T:IRES.dsReports.dtVoucherDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRES.dsReports.dtCollectionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRES.dsReports.dtPaymentHistoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRES.dsReports.dtExpenseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRES.dsReports.dtAllagentsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRES.dsReports.dtDownlinesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRES.dsReports.dtDueCollectablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:IRES.dsReports.dtVoucherRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRES.dsReports.dtCollectionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRES.dsReports.dtPaymentHistoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRES.dsReports.dtExpenseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRES.dsReports.dtAllagentsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRES.dsReports.dtDownlinesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRES.dsReports.dtDueCollectablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:IRES.dsReports.dtVoucherRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRES.dsReports.dtCollectionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRES.dsReports.dtPaymentHistoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRES.dsReports.dtExpenseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRES.dsReports.dtAllagentsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRES.dsReports.dtDownlinesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRES.dsReports.dtDueCollectablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:IRES.dsReports">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.delete_16x16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.Eye_open">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.ic_add16_16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.ic_cancel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.ic_change">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.ic_edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.ic_print">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.ic_save16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.ic_setting16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.ic_view">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.Info_Filled_50">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.no_image">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.Plus_Math_52">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.printer">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.refresh">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.search_glyph">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:IRES.My.Resources.Resources.Settings_482">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:IRES.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
