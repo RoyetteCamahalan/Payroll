@@ -484,3 +484,25 @@ D:\Royette\Trusted Company\rems\REMS\REMS\obj\x86\Debug\IRES.xml
 D:\Royette\Trusted Company\rems\REMS\REMS\obj\x86\Debug\IRES.pdb
 D:\Royette\Trusted Company\rems\REMS\REMS\obj\x86\Debug\IRES.frmViewPaymentHistory.resources
 D:\Royette\Trusted Company\rems\REMS\REMS\obj\x86\Debug\IRES.frmEditPayment.resources
+D:\Payroll\REMS\REMS\obj\x86\Debug\REMS.vbprojResolveAssemblyReference.cache
+D:\Payroll\REMS\REMS\obj\x86\Debug\REMS.vbproj.ResolveComReference.cache
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.AdminLayout.resources
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.AdminSignin.resources
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.frmOverride.resources
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.frmmsgbox.resources
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.frmSettings.resources
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.frmCompanyProfile.resources
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.Resources.resources
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.reportsform.resources
+D:\Payroll\REMS\REMS\obj\x86\Debug\REMS.vbproj.GenerateResource.Cache
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.exe
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.xml
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.pdb
+D:\Payroll\REMS\REMS\bin\Debug\IRES.exe.config
+D:\Payroll\REMS\REMS\bin\Debug\IRES.exe.manifest
+D:\Payroll\REMS\REMS\bin\Debug\IRES.application
+D:\Payroll\REMS\REMS\bin\Debug\IRES.exe
+D:\Payroll\REMS\REMS\bin\Debug\IRES.pdb
+D:\Payroll\REMS\REMS\bin\Debug\IRES.xml
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.exe.manifest
+D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.application
