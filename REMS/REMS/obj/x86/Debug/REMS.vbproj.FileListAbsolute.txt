@@ -506,3 +506,10 @@ D:\Payroll\REMS\REMS\bin\Debug\IRES.pdb
 D:\Payroll\REMS\REMS\bin\Debug\IRES.xml
 D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.exe.manifest
 D:\Payroll\REMS\REMS\obj\x86\Debug\IRES.application
+D:\Payroll\REMS\REMS\obj\x86\Debug\Interop.CRDESIGNERLib.dll
+D:\Payroll\REMS\REMS\obj\x86\Debug\Interop.CRREPORTSOURCEBRIDGELib.dll
+D:\Payroll\REMS\REMS\obj\x86\Debug\Interop.CrystalActiveXReportViewerLib13.dll
+D:\Payroll\REMS\REMS\obj\x86\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+D:\Payroll\REMS\REMS\obj\x86\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+D:\Payroll\REMS\REMS\obj\x86\Debug\Interop.CrystalReportsDataDefModelLib.dll
+D:\Payroll\REMS\REMS\obj\x86\Debug\Interop.CrystalReportViewerExportLib.dll

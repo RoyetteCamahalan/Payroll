@@ -8,7 +8,7 @@
     End Sub
 #Region "Variables"
     Public mycurrentpage As currentpage
-    Private nxtlocation As Integer = 174
+    'Private nxtlocation As Integer = 174
     Private interval As Integer = 45
     Public isprofileheaderfocused As Boolean
     Enum currentpage
@@ -73,116 +73,82 @@
         If Not Isadmin Then
             GlobalModule.GetUserModules(applicationmodule.modReservation)
             If canAdd Or canEdit Or canView Then
-                SideReservation.Location = New Point(0, nxtlocation)
-                MenuReservation.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
+                'SideReservation.Location = New Point(0, nxtlocation)
+                'MenuTimeLogs.Location = New Point(6, nxtlocation)
+                'nxtlocation += interval
             Else
                 SideReservation.Visible = False
-                MenuReservation.Visible = False
+                MenuTimeLogs.Visible = False
             End If
             GlobalModule.GetUserModules(applicationmodule.modSales)
             If canAdd Or canEdit Or canView Then
-                SideInvoices.Location = New Point(0, nxtlocation)
-                MenuInvoices.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
+                'SideInvoices.Location = New Point(0, nxtlocation)
+                'MenuShifting.Location = New Point(6, nxtlocation)
+                'nxtlocation += interval
             Else
                 SideInvoices.Visible = False
-                MenuInvoices.Visible = False
+                MenuShifting.Visible = False
             End If
             GlobalModule.GetUserModules(applicationmodule.modPayment)
             If canAdd Or canEdit Or canView Then
-                SidePayments.Location = New Point(0, nxtlocation)
-                MenuPayments.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
+                'SidePayments.Location = New Point(0, nxtlocation)
+                'MenuLeave.Location = New Point(6, nxtlocation)
+                'nxtlocation += interval
             Else
                 SidePayments.Visible = False
-                MenuPayments.Visible = False
+                MenuLeave.Visible = False
             End If
-            GlobalModule.GetUserModules(applicationmodule.modCommissions)
-            If canAdd Or canEdit Or canView Then
-                SideCommissions.Location = New Point(0, nxtlocation)
-                MenuCommissions.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
-            Else
-                SideCommissions.Visible = False
-                MenuCommissions.Visible = False
-            End If
-            GlobalModule.GetUserModules(applicationmodule.modAgents)
-            If canAdd Or canEdit Or canView Then
-                SideAgents.Location = New Point(0, nxtlocation)
-                MenuAgents.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
-            Else
-                SideAgents.Visible = False
-                MenuAgents.Visible = False
-            End If
-            GlobalModule.GetUserModules(applicationmodule.modProperties)
-            If canAdd Or canEdit Or canView Then
-                SideProperties.Location = New Point(0, nxtlocation)
-                MenuProperties.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
-            Else
-                SideProperties.Visible = False
-                MenuProperties.Visible = False
-            End If
-            GlobalModule.GetUserModules(applicationmodule.modCustomers)
-            If canAdd Or canEdit Or canView Then
-                SideCustomers.Location = New Point(0, nxtlocation)
-                MenuCustomers.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
-            Else
-                SideCustomers.Visible = False
-                MenuCustomers.Visible = False
-            End If
+
             GlobalModule.GetUserModules(applicationmodule.modEmployees)
+
             If canAdd Or canEdit Or canView Then
-                SideEmployees.Location = New Point(0, nxtlocation)
-                MenuEmployees.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
+                'SideEmployees.Location = New Point(0, nxtlocation)
+                'MenuEmployees.Location = New Point(6, nxtlocation)
+                'nxtlocation += interval
             Else
                 SideEmployees.Visible = False
                 MenuEmployees.Visible = False
             End If
             GlobalModule.GetUserModules(applicationmodule.modReports)
             If canAdd Or canEdit Or canView Then
-                SideReports.Location = New Point(0, nxtlocation)
-                MenuReports.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
+                'SideReports.Location = New Point(0, nxtlocation)
+                'MenuReports.Location = New Point(6, nxtlocation)
+                'nxtlocation += interval
             Else
                 SideReports.Visible = False
                 MenuReports.Visible = False
             End If
             GlobalModule.GetUserModules(applicationmodule.modCheckRegister)
             If canAdd Or canEdit Or canView Then
-                SideCheckRegister.Location = New Point(0, nxtlocation)
-                MenuCheckRegister.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
+                'SideCheckRegister.Location = New Point(0, nxtlocation)
+                'MenuDepartments.Location = New Point(6, nxtlocation)
+                'nxtlocation += interval
             Else
                 SideCheckRegister.Visible = False
-                MenuCheckRegister.Visible = False
+                MenuDepartments.Visible = False
             End If
             GlobalModule.GetUserModules(applicationmodule.modExpenses)
             If (canAdd Or canEdit Or canView) And IsModuleActive(applicationmodule.modExpenses) Then
-                SideExpenses.Location = New Point(0, nxtlocation)
-                MenuExpenses.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
+                'SideExpenses.Location = New Point(0, nxtlocation)
+                'MenuUsers.Location = New Point(6, nxtlocation)
+                'nxtlocation += interval
             Else
                 SideExpenses.Visible = False
-                MenuExpenses.Visible = False
+                MenuUsers.Visible = False
             End If
         Else
-            nxtlocation = 624
+            'nxtlocation = 624
             If IsModuleActive(applicationmodule.modExpenses) Then
-                SideExpenses.Location = New Point(0, nxtlocation)
-                MenuExpenses.Location = New Point(6, nxtlocation)
-                nxtlocation += interval
+                'SideExpenses.Location = New Point(0, nxtlocation)
+                'MenuUsers.Location = New Point(6, nxtlocation)
+                'nxtlocation += interval
             Else
                 SideExpenses.Visible = False
-                MenuExpenses.Visible = False
+                MenuUsers.Visible = False
             End If
         End If
 
-        panelmenulast.Location = New Point(0, nxtlocation)
+        'panelmenulast.Location = New Point(0, nxtlocation)
 
 
     End Sub
@@ -191,46 +157,26 @@
             AdminSignin.Show()
             Me.Dispose()
         Else
-            Me.MenuExpenses.BackColor = System.Drawing.SystemColors.WindowFrame
+            Me.MenuUsers.BackColor = System.Drawing.SystemColors.WindowFrame
             Me.SideExpenses.BackColor = System.Drawing.SystemColors.WindowFrame
         End If
     End Sub
 #End Region
 
 #Region "MouseEnterLeave"
-    Private Sub MenuReservation_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuReservation.MouseEnter
-        Me.MenuReservation.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
+    Private Sub MenuReservation_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuTimeLogs.MouseEnter
+        Me.MenuTimeLogs.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.SideReservation.BackColor = Color.SeaGreen
     End Sub
 
-    Private Sub MenuInvoices_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuInvoices.MouseEnter
-        Me.MenuInvoices.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
+    Private Sub MenuInvoices_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuShifting.MouseEnter
+        Me.MenuShifting.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.SideInvoices.BackColor = Color.SeaGreen
     End Sub
 
-    Private Sub MenuPayments_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuPayments.MouseEnter
-        Me.MenuPayments.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
+    Private Sub MenuPayments_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuLeave.MouseEnter
+        Me.MenuLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.SidePayments.BackColor = Color.SeaGreen
-    End Sub
-
-    Private Sub MenuCommissions_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuCommissions.MouseEnter
-        Me.MenuCommissions.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.SideCommissions.BackColor = Color.SeaGreen
-    End Sub
-
-    Private Sub MenuAgents_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuAgents.MouseEnter
-        Me.MenuAgents.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.SideAgents.BackColor = Color.SeaGreen
-    End Sub
-
-    Private Sub MenuProperties_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuProperties.MouseEnter
-        Me.MenuProperties.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.SideProperties.BackColor = Color.SeaGreen
-    End Sub
-
-    Private Sub MenuCustomers_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuCustomers.MouseEnter
-        Me.MenuCustomers.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.SideCustomers.BackColor = Color.SeaGreen
     End Sub
 
     Private Sub MenuEmployees_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuEmployees.MouseEnter
@@ -244,87 +190,48 @@
         Me.SideReports.BackColor = Color.SeaGreen
     End Sub
 
-    Private Sub MenuLogout_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuExpenses.MouseEnter
-        Me.MenuExpenses.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
+    Private Sub MenuLogout_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuUsers.MouseEnter
+        Me.MenuUsers.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.SideExpenses.BackColor = Color.SeaGreen
     End Sub
 
-    Private Sub MenuCheckRegister_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuCheckRegister.MouseEnter
-        Me.MenuCheckRegister.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
+    Private Sub MenuCheckRegister_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuDepartments.MouseEnter
+        Me.MenuDepartments.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.SideCheckRegister.BackColor = Color.SeaGreen
     End Sub
 
 #End Region
 
-    Private Sub MenuReservation_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuReservation.MouseLeave
-        If Not MenuReservation.ClientRectangle.Contains(MenuReservation.PointToClient(Control.MousePosition)) Then
+    Private Sub MenuReservation_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuTimeLogs.MouseLeave
+        If Not MenuTimeLogs.ClientRectangle.Contains(MenuTimeLogs.PointToClient(Control.MousePosition)) Then
             If mycurrentpage <> currentpage.pageReservation Then
-                Me.MenuReservation.BackColor = System.Drawing.SystemColors.WindowFrame
+                Me.MenuTimeLogs.BackColor = System.Drawing.SystemColors.WindowFrame
                 Me.SideReservation.BackColor = System.Drawing.SystemColors.WindowFrame
             End If
         End If
     End Sub
 
-    Private Sub MenuInvoices_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuInvoices.MouseLeave
-        If Not MenuInvoices.ClientRectangle.Contains(MenuInvoices.PointToClient(Control.MousePosition)) Then
+    Private Sub MenuInvoices_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuShifting.MouseLeave
+        If Not MenuShifting.ClientRectangle.Contains(MenuShifting.PointToClient(Control.MousePosition)) Then
             If mycurrentpage <> currentpage.pageInvoices Then
-                Me.MenuInvoices.BackColor = System.Drawing.SystemColors.WindowFrame
+                Me.MenuShifting.BackColor = System.Drawing.SystemColors.WindowFrame
                 Me.SideInvoices.BackColor = System.Drawing.SystemColors.WindowFrame
             End If
         End If
 
     End Sub
 
-    Private Sub MenuPayments_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuPayments.MouseLeave
-        If Not MenuPayments.ClientRectangle.Contains(MenuPayments.PointToClient(Control.MousePosition)) Then
+    Private Sub MenuPayments_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuLeave.MouseLeave
+        If Not MenuLeave.ClientRectangle.Contains(MenuLeave.PointToClient(Control.MousePosition)) Then
             If mycurrentpage <> currentpage.pagePayments Then
-                Me.MenuPayments.BackColor = System.Drawing.SystemColors.WindowFrame
+                Me.MenuLeave.BackColor = System.Drawing.SystemColors.WindowFrame
                 Me.SidePayments.BackColor = System.Drawing.SystemColors.WindowFrame
             End If
         End If
 
     End Sub
 
-    Private Sub MenuCommissions_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuCommissions.MouseLeave
-        If Not MenuCommissions.ClientRectangle.Contains(MenuCommissions.PointToClient(Control.MousePosition)) Then
-            If mycurrentpage <> currentpage.pageCommissions Then
-                Me.MenuCommissions.BackColor = System.Drawing.SystemColors.WindowFrame
-                Me.SideCommissions.BackColor = System.Drawing.SystemColors.WindowFrame
-            End If
-        End If
-
-    End Sub
-
-    Private Sub MenuAgents_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuAgents.MouseLeave
-        If Not MenuAgents.ClientRectangle.Contains(MenuAgents.PointToClient(Control.MousePosition)) Then
-            If mycurrentpage <> currentpage.pageAgents Then
-                Me.MenuAgents.BackColor = System.Drawing.SystemColors.WindowFrame
-                Me.SideAgents.BackColor = System.Drawing.SystemColors.WindowFrame
-            End If
-        End If
-
-    End Sub
-
-    Private Sub MenuProperties_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuProperties.MouseLeave
-        If Not MenuProperties.ClientRectangle.Contains(MenuProperties.PointToClient(Control.MousePosition)) Then
-            If mycurrentpage <> currentpage.pageProperties Then
-                Me.MenuProperties.BackColor = System.Drawing.SystemColors.WindowFrame
-                Me.SideProperties.BackColor = System.Drawing.SystemColors.WindowFrame
-            End If
-        End If
-
-    End Sub
-
-    Private Sub MenuCustomers_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuCustomers.MouseLeave
-        If Not MenuCustomers.ClientRectangle.Contains(MenuCustomers.PointToClient(Control.MousePosition)) Then
-            If mycurrentpage <> currentpage.pageCustomers Then
-                Me.MenuCustomers.BackColor = System.Drawing.SystemColors.WindowFrame
-                Me.SideCustomers.BackColor = System.Drawing.SystemColors.WindowFrame
-            End If
-        End If
-
-    End Sub
-
+    
     Private Sub MenuEmployees_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuEmployees.MouseLeave
         If Not MenuEmployees.ClientRectangle.Contains(MenuEmployees.PointToClient(Control.MousePosition)) Then
             If mycurrentpage <> currentpage.pageEmployees Then
@@ -344,45 +251,45 @@
         End If
     End Sub
 
-    Private Sub MenuExpenses_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuExpenses.MouseLeave
-        If Not MenuExpenses.ClientRectangle.Contains(MenuExpenses.PointToClient(Control.MousePosition)) Then
+    Private Sub MenuExpenses_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuUsers.MouseLeave
+        If Not MenuUsers.ClientRectangle.Contains(MenuUsers.PointToClient(Control.MousePosition)) Then
             If mycurrentpage <> currentpage.pageExpenses Then
-                Me.MenuExpenses.BackColor = System.Drawing.SystemColors.WindowFrame
+                Me.MenuUsers.BackColor = System.Drawing.SystemColors.WindowFrame
                 Me.SideExpenses.BackColor = System.Drawing.SystemColors.WindowFrame
             End If
         End If
     End Sub
 
-    Private Sub MenuCheckRegister_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuCheckRegister.MouseLeave
-        If Not MenuCheckRegister.ClientRectangle.Contains(MenuCheckRegister.PointToClient(Control.MousePosition)) Then
-            Me.MenuCheckRegister.BackColor = System.Drawing.SystemColors.WindowFrame
+    Private Sub MenuCheckRegister_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuDepartments.MouseLeave
+        If Not MenuDepartments.ClientRectangle.Contains(MenuDepartments.PointToClient(Control.MousePosition)) Then
+            Me.MenuDepartments.BackColor = System.Drawing.SystemColors.WindowFrame
             Me.SideCheckRegister.BackColor = System.Drawing.SystemColors.WindowFrame
         End If
     End Sub
 
-    
 
-    Private Sub lblInvoices_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuInvoices.Click, lblInvoices.Click
+
+    Private Sub lblInvoices_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuShifting.Click, lblInvoices.Click
         'Call setCurrentPage(currentpage.pageInvoices)
     End Sub
 
-    Private Sub lblPayments_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuPayments.Click, lblPayments.Click
+    Private Sub lblPayments_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuLeave.Click, lblPayments.Click
         'Call setCurrentPage(currentpage.pagePayments)
     End Sub
 
-    Private Sub lblCommissions_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuCommissions.Click, lblCommissions.Click
+    Private Sub lblCommissions_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'Call setCurrentPage(currentpage.pageCommissions)
     End Sub
 
-    Private Sub lblAgents_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuAgents.Click, lblAgents.Click
+    Private Sub lblAgents_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'Call setCurrentPage(currentpage.pageAgents)
     End Sub
 
-    Private Sub lblProperties_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuProperties.Click, lblProperties.Click
+    Private Sub lblProperties_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'Call setCurrentPage(currentpage.pageProperties)
     End Sub
 
-    Private Sub lblCustomers_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuCustomers.Click, lblCustomers.Click
+    Private Sub lblCustomers_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'Call setCurrentPage(currentpage.pageCustomers)
     End Sub
 
@@ -394,11 +301,11 @@
         'Call setCurrentPage(currentpage.pageReports)
     End Sub
 
-    Private Sub lblcheckregister_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuCheckRegister.Click, lblcheckregister.Click, Label9.Click
+    Private Sub lblcheckregister_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuDepartments.Click, lblcheckregister.Click, Label9.Click
         'Call setCurrentPage(currentpage.pageCheckRegister)
     End Sub
 
-    Private Sub lblLogout_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuExpenses.Click, lblExpenses.Click
+    Private Sub lblLogout_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuUsers.Click, lblExpenses.Click
         'Call setCurrentPage(currentpage.pageExpenses)
     End Sub
 
@@ -473,4 +380,7 @@
         End If
     End Sub
 
+    Private Sub MenuReservation_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles MenuTimeLogs.Paint
+
+    End Sub
 End Class

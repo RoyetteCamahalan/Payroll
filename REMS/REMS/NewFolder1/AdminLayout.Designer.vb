@@ -39,24 +39,16 @@ Partial Class AdminLayout
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.MenuInvoices = New System.Windows.Forms.Panel()
+        Me.MenuShifting = New System.Windows.Forms.Panel()
         Me.lblInvoices = New System.Windows.Forms.Label()
         Me.SideInvoices = New System.Windows.Forms.Panel()
         Me.SidePayments = New System.Windows.Forms.Panel()
-        Me.MenuPayments = New System.Windows.Forms.Panel()
+        Me.MenuLeave = New System.Windows.Forms.Panel()
         Me.lblPayments = New System.Windows.Forms.Label()
         Me.SideCommissions = New System.Windows.Forms.Panel()
-        Me.MenuCommissions = New System.Windows.Forms.Panel()
-        Me.lblCommissions = New System.Windows.Forms.Label()
         Me.SideCustomers = New System.Windows.Forms.Panel()
-        Me.MenuCustomers = New System.Windows.Forms.Panel()
-        Me.lblCustomers = New System.Windows.Forms.Label()
         Me.SideProperties = New System.Windows.Forms.Panel()
-        Me.MenuProperties = New System.Windows.Forms.Panel()
-        Me.lblProperties = New System.Windows.Forms.Label()
         Me.SideAgents = New System.Windows.Forms.Panel()
-        Me.MenuAgents = New System.Windows.Forms.Panel()
-        Me.lblAgents = New System.Windows.Forms.Label()
         Me.SideReports = New System.Windows.Forms.Panel()
         Me.MenuReports = New System.Windows.Forms.Panel()
         Me.lblReports = New System.Windows.Forms.Label()
@@ -64,11 +56,11 @@ Partial Class AdminLayout
         Me.MenuEmployees = New System.Windows.Forms.Panel()
         Me.lblEmployees = New System.Windows.Forms.Label()
         Me.SideExpenses = New System.Windows.Forms.Panel()
-        Me.MenuExpenses = New System.Windows.Forms.Panel()
+        Me.MenuUsers = New System.Windows.Forms.Panel()
         Me.lblExpenses = New System.Windows.Forms.Label()
         Me.panelmenulast = New System.Windows.Forms.Panel()
         Me.SideReservation = New System.Windows.Forms.Panel()
-        Me.MenuReservation = New System.Windows.Forms.Panel()
+        Me.MenuTimeLogs = New System.Windows.Forms.Panel()
         Me.lblReservations = New System.Windows.Forms.Label()
         Me.paneldropprofile = New System.Windows.Forms.Panel()
         Me.btnSignoutdrop = New System.Windows.Forms.Button()
@@ -87,7 +79,7 @@ Partial Class AdminLayout
         Me.lblModule = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.panelsettingdrop = New System.Windows.Forms.Panel()
-        Me.MenuCheckRegister = New System.Windows.Forms.Panel()
+        Me.MenuDepartments = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lblcheckregister = New System.Windows.Forms.Label()
         Me.SideCheckRegister = New System.Windows.Forms.Panel()
@@ -101,20 +93,17 @@ Partial Class AdminLayout
         Me.panelheaderprofile.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
-        Me.MenuInvoices.SuspendLayout()
-        Me.MenuPayments.SuspendLayout()
-        Me.MenuCommissions.SuspendLayout()
-        Me.MenuCustomers.SuspendLayout()
-        Me.MenuProperties.SuspendLayout()
-        Me.MenuAgents.SuspendLayout()
+        Me.MenuShifting.SuspendLayout()
+        Me.MenuLeave.SuspendLayout()
         Me.MenuReports.SuspendLayout()
         Me.MenuEmployees.SuspendLayout()
-        Me.MenuExpenses.SuspendLayout()
-        Me.MenuReservation.SuspendLayout()
+        Me.MenuUsers.SuspendLayout()
+        Me.panelmenulast.SuspendLayout()
+        Me.MenuTimeLogs.SuspendLayout()
         Me.paneldropprofile.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.MenuCheckRegister.SuspendLayout()
+        Me.MenuDepartments.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.pctrCompanyLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -279,14 +268,15 @@ Partial Class AdminLayout
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Main Navigation"
         '
-        'MenuInvoices
+        'MenuShifting
         '
-        Me.MenuInvoices.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.MenuInvoices.Controls.Add(Me.lblInvoices)
-        Me.MenuInvoices.Location = New System.Drawing.Point(6, 219)
-        Me.MenuInvoices.Name = "MenuInvoices"
-        Me.MenuInvoices.Size = New System.Drawing.Size(186, 45)
-        Me.MenuInvoices.TabIndex = 4
+        Me.MenuShifting.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.MenuShifting.Controls.Add(Me.lblInvoices)
+        Me.MenuShifting.Dock = System.Windows.Forms.DockStyle.Top
+        Me.MenuShifting.Location = New System.Drawing.Point(0, 90)
+        Me.MenuShifting.Name = "MenuShifting"
+        Me.MenuShifting.Size = New System.Drawing.Size(196, 45)
+        Me.MenuShifting.TabIndex = 4
         '
         'lblInvoices
         '
@@ -298,9 +288,9 @@ Partial Class AdminLayout
         Me.lblInvoices.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblInvoices.Location = New System.Drawing.Point(15, 14)
         Me.lblInvoices.Name = "lblInvoices"
-        Me.lblInvoices.Size = New System.Drawing.Size(70, 16)
+        Me.lblInvoices.Size = New System.Drawing.Size(158, 16)
         Me.lblInvoices.TabIndex = 27
-        Me.lblInvoices.Text = "      Sales"
+        Me.lblInvoices.Text = "      Employee Shifting"
         '
         'SideInvoices
         '
@@ -318,14 +308,15 @@ Partial Class AdminLayout
         Me.SidePayments.Size = New System.Drawing.Size(6, 45)
         Me.SidePayments.TabIndex = 7
         '
-        'MenuPayments
+        'MenuLeave
         '
-        Me.MenuPayments.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.MenuPayments.Controls.Add(Me.lblPayments)
-        Me.MenuPayments.Location = New System.Drawing.Point(6, 264)
-        Me.MenuPayments.Name = "MenuPayments"
-        Me.MenuPayments.Size = New System.Drawing.Size(186, 45)
-        Me.MenuPayments.TabIndex = 6
+        Me.MenuLeave.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.MenuLeave.Controls.Add(Me.lblPayments)
+        Me.MenuLeave.Dock = System.Windows.Forms.DockStyle.Top
+        Me.MenuLeave.Location = New System.Drawing.Point(0, 45)
+        Me.MenuLeave.Name = "MenuLeave"
+        Me.MenuLeave.Size = New System.Drawing.Size(196, 45)
+        Me.MenuLeave.TabIndex = 6
         '
         'lblPayments
         '
@@ -337,9 +328,9 @@ Partial Class AdminLayout
         Me.lblPayments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblPayments.Location = New System.Drawing.Point(15, 12)
         Me.lblPayments.Name = "lblPayments"
-        Me.lblPayments.Size = New System.Drawing.Size(99, 16)
+        Me.lblPayments.Size = New System.Drawing.Size(147, 16)
         Me.lblPayments.TabIndex = 29
-        Me.lblPayments.Text = "      Payments"
+        Me.lblPayments.Text = "      Employee Leave"
         '
         'SideCommissions
         '
@@ -349,28 +340,6 @@ Partial Class AdminLayout
         Me.SideCommissions.Size = New System.Drawing.Size(6, 45)
         Me.SideCommissions.TabIndex = 9
         '
-        'MenuCommissions
-        '
-        Me.MenuCommissions.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.MenuCommissions.Controls.Add(Me.lblCommissions)
-        Me.MenuCommissions.Location = New System.Drawing.Point(6, 309)
-        Me.MenuCommissions.Name = "MenuCommissions"
-        Me.MenuCommissions.Size = New System.Drawing.Size(186, 45)
-        Me.MenuCommissions.TabIndex = 8
-        '
-        'lblCommissions
-        '
-        Me.lblCommissions.AutoSize = True
-        Me.lblCommissions.Font = New System.Drawing.Font("Arial", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.lblCommissions.ForeColor = System.Drawing.Color.White
-        Me.lblCommissions.Image = CType(resources.GetObject("lblCommissions.Image"), System.Drawing.Image)
-        Me.lblCommissions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblCommissions.Location = New System.Drawing.Point(15, 15)
-        Me.lblCommissions.Name = "lblCommissions"
-        Me.lblCommissions.Size = New System.Drawing.Size(125, 16)
-        Me.lblCommissions.TabIndex = 28
-        Me.lblCommissions.Text = "      Commissions"
-        '
         'SideCustomers
         '
         Me.SideCustomers.BackColor = System.Drawing.SystemColors.WindowFrame
@@ -378,28 +347,6 @@ Partial Class AdminLayout
         Me.SideCustomers.Name = "SideCustomers"
         Me.SideCustomers.Size = New System.Drawing.Size(6, 45)
         Me.SideCustomers.TabIndex = 15
-        '
-        'MenuCustomers
-        '
-        Me.MenuCustomers.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.MenuCustomers.Controls.Add(Me.lblCustomers)
-        Me.MenuCustomers.Location = New System.Drawing.Point(6, 444)
-        Me.MenuCustomers.Name = "MenuCustomers"
-        Me.MenuCustomers.Size = New System.Drawing.Size(186, 45)
-        Me.MenuCustomers.TabIndex = 14
-        '
-        'lblCustomers
-        '
-        Me.lblCustomers.AutoSize = True
-        Me.lblCustomers.Font = New System.Drawing.Font("Arial", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.lblCustomers.ForeColor = System.Drawing.Color.White
-        Me.lblCustomers.Image = CType(resources.GetObject("lblCustomers.Image"), System.Drawing.Image)
-        Me.lblCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblCustomers.Location = New System.Drawing.Point(15, 16)
-        Me.lblCustomers.Name = "lblCustomers"
-        Me.lblCustomers.Size = New System.Drawing.Size(108, 16)
-        Me.lblCustomers.TabIndex = 31
-        Me.lblCustomers.Text = "      Customers"
         '
         'SideProperties
         '
@@ -409,28 +356,6 @@ Partial Class AdminLayout
         Me.SideProperties.Size = New System.Drawing.Size(6, 45)
         Me.SideProperties.TabIndex = 13
         '
-        'MenuProperties
-        '
-        Me.MenuProperties.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.MenuProperties.Controls.Add(Me.lblProperties)
-        Me.MenuProperties.Location = New System.Drawing.Point(6, 399)
-        Me.MenuProperties.Name = "MenuProperties"
-        Me.MenuProperties.Size = New System.Drawing.Size(186, 45)
-        Me.MenuProperties.TabIndex = 12
-        '
-        'lblProperties
-        '
-        Me.lblProperties.AutoSize = True
-        Me.lblProperties.Font = New System.Drawing.Font("Arial", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.lblProperties.ForeColor = System.Drawing.Color.White
-        Me.lblProperties.Image = CType(resources.GetObject("lblProperties.Image"), System.Drawing.Image)
-        Me.lblProperties.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblProperties.Location = New System.Drawing.Point(15, 12)
-        Me.lblProperties.Name = "lblProperties"
-        Me.lblProperties.Size = New System.Drawing.Size(106, 16)
-        Me.lblProperties.TabIndex = 30
-        Me.lblProperties.Text = "      Properties"
-        '
         'SideAgents
         '
         Me.SideAgents.BackColor = System.Drawing.SystemColors.WindowFrame
@@ -438,28 +363,6 @@ Partial Class AdminLayout
         Me.SideAgents.Name = "SideAgents"
         Me.SideAgents.Size = New System.Drawing.Size(6, 45)
         Me.SideAgents.TabIndex = 11
-        '
-        'MenuAgents
-        '
-        Me.MenuAgents.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.MenuAgents.Controls.Add(Me.lblAgents)
-        Me.MenuAgents.Location = New System.Drawing.Point(6, 354)
-        Me.MenuAgents.Name = "MenuAgents"
-        Me.MenuAgents.Size = New System.Drawing.Size(186, 45)
-        Me.MenuAgents.TabIndex = 10
-        '
-        'lblAgents
-        '
-        Me.lblAgents.AutoSize = True
-        Me.lblAgents.Font = New System.Drawing.Font("Arial", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.lblAgents.ForeColor = System.Drawing.Color.White
-        Me.lblAgents.Image = CType(resources.GetObject("lblAgents.Image"), System.Drawing.Image)
-        Me.lblAgents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblAgents.Location = New System.Drawing.Point(15, 14)
-        Me.lblAgents.Name = "lblAgents"
-        Me.lblAgents.Size = New System.Drawing.Size(80, 16)
-        Me.lblAgents.TabIndex = 29
-        Me.lblAgents.Text = "      Agents"
         '
         'SideReports
         '
@@ -473,9 +376,10 @@ Partial Class AdminLayout
         '
         Me.MenuReports.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.MenuReports.Controls.Add(Me.lblReports)
-        Me.MenuReports.Location = New System.Drawing.Point(6, 534)
+        Me.MenuReports.Dock = System.Windows.Forms.DockStyle.Top
+        Me.MenuReports.Location = New System.Drawing.Point(0, 270)
         Me.MenuReports.Name = "MenuReports"
-        Me.MenuReports.Size = New System.Drawing.Size(186, 45)
+        Me.MenuReports.Size = New System.Drawing.Size(196, 45)
         Me.MenuReports.TabIndex = 20
         '
         'lblReports
@@ -503,9 +407,10 @@ Partial Class AdminLayout
         '
         Me.MenuEmployees.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.MenuEmployees.Controls.Add(Me.lblEmployees)
-        Me.MenuEmployees.Location = New System.Drawing.Point(6, 489)
+        Me.MenuEmployees.Dock = System.Windows.Forms.DockStyle.Top
+        Me.MenuEmployees.Location = New System.Drawing.Point(0, 180)
         Me.MenuEmployees.Name = "MenuEmployees"
-        Me.MenuEmployees.Size = New System.Drawing.Size(186, 45)
+        Me.MenuEmployees.Size = New System.Drawing.Size(196, 45)
         Me.MenuEmployees.TabIndex = 16
         '
         'lblEmployees
@@ -529,14 +434,15 @@ Partial Class AdminLayout
         Me.SideExpenses.Size = New System.Drawing.Size(6, 45)
         Me.SideExpenses.TabIndex = 23
         '
-        'MenuExpenses
+        'MenuUsers
         '
-        Me.MenuExpenses.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.MenuExpenses.Controls.Add(Me.lblExpenses)
-        Me.MenuExpenses.Location = New System.Drawing.Point(6, 624)
-        Me.MenuExpenses.Name = "MenuExpenses"
-        Me.MenuExpenses.Size = New System.Drawing.Size(186, 45)
-        Me.MenuExpenses.TabIndex = 22
+        Me.MenuUsers.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.MenuUsers.Controls.Add(Me.lblExpenses)
+        Me.MenuUsers.Dock = System.Windows.Forms.DockStyle.Top
+        Me.MenuUsers.Location = New System.Drawing.Point(0, 225)
+        Me.MenuUsers.Name = "MenuUsers"
+        Me.MenuUsers.Size = New System.Drawing.Size(196, 45)
+        Me.MenuUsers.TabIndex = 22
         '
         'lblExpenses
         '
@@ -547,13 +453,21 @@ Partial Class AdminLayout
         Me.lblExpenses.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblExpenses.Location = New System.Drawing.Point(15, 13)
         Me.lblExpenses.Name = "lblExpenses"
-        Me.lblExpenses.Size = New System.Drawing.Size(101, 16)
+        Me.lblExpenses.Size = New System.Drawing.Size(73, 16)
         Me.lblExpenses.TabIndex = 35
-        Me.lblExpenses.Text = "      Expenses"
+        Me.lblExpenses.Text = "      Users"
         '
         'panelmenulast
         '
+        Me.panelmenulast.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.panelmenulast.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.panelmenulast.Controls.Add(Me.MenuReports)
+        Me.panelmenulast.Controls.Add(Me.MenuUsers)
+        Me.panelmenulast.Controls.Add(Me.MenuEmployees)
+        Me.panelmenulast.Controls.Add(Me.MenuDepartments)
+        Me.panelmenulast.Controls.Add(Me.MenuShifting)
+        Me.panelmenulast.Controls.Add(Me.MenuLeave)
+        Me.panelmenulast.Controls.Add(Me.MenuTimeLogs)
         Me.panelmenulast.Location = New System.Drawing.Point(0, 174)
         Me.panelmenulast.Name = "panelmenulast"
         Me.panelmenulast.Size = New System.Drawing.Size(196, 527)
@@ -567,14 +481,15 @@ Partial Class AdminLayout
         Me.SideReservation.Size = New System.Drawing.Size(6, 45)
         Me.SideReservation.TabIndex = 28
         '
-        'MenuReservation
+        'MenuTimeLogs
         '
-        Me.MenuReservation.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.MenuReservation.Controls.Add(Me.lblReservations)
-        Me.MenuReservation.Location = New System.Drawing.Point(6, 174)
-        Me.MenuReservation.Name = "MenuReservation"
-        Me.MenuReservation.Size = New System.Drawing.Size(186, 45)
-        Me.MenuReservation.TabIndex = 27
+        Me.MenuTimeLogs.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.MenuTimeLogs.Controls.Add(Me.lblReservations)
+        Me.MenuTimeLogs.Dock = System.Windows.Forms.DockStyle.Top
+        Me.MenuTimeLogs.Location = New System.Drawing.Point(0, 0)
+        Me.MenuTimeLogs.Name = "MenuTimeLogs"
+        Me.MenuTimeLogs.Size = New System.Drawing.Size(196, 45)
+        Me.MenuTimeLogs.TabIndex = 27
         '
         'lblReservations
         '
@@ -586,9 +501,9 @@ Partial Class AdminLayout
         Me.lblReservations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblReservations.Location = New System.Drawing.Point(15, 14)
         Me.lblReservations.Name = "lblReservations"
-        Me.lblReservations.Size = New System.Drawing.Size(126, 16)
+        Me.lblReservations.Size = New System.Drawing.Size(103, 16)
         Me.lblReservations.TabIndex = 27
-        Me.lblReservations.Text = "      Reservations"
+        Me.lblReservations.Text = "      Time Logs"
         '
         'paneldropprofile
         '
@@ -778,15 +693,16 @@ Partial Class AdminLayout
         Me.panelsettingdrop.TabIndex = 35
         Me.panelsettingdrop.Visible = False
         '
-        'MenuCheckRegister
+        'MenuDepartments
         '
-        Me.MenuCheckRegister.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.MenuCheckRegister.Controls.Add(Me.Label9)
-        Me.MenuCheckRegister.Controls.Add(Me.lblcheckregister)
-        Me.MenuCheckRegister.Location = New System.Drawing.Point(6, 579)
-        Me.MenuCheckRegister.Name = "MenuCheckRegister"
-        Me.MenuCheckRegister.Size = New System.Drawing.Size(186, 45)
-        Me.MenuCheckRegister.TabIndex = 37
+        Me.MenuDepartments.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.MenuDepartments.Controls.Add(Me.Label9)
+        Me.MenuDepartments.Controls.Add(Me.lblcheckregister)
+        Me.MenuDepartments.Dock = System.Windows.Forms.DockStyle.Top
+        Me.MenuDepartments.Location = New System.Drawing.Point(0, 135)
+        Me.MenuDepartments.Name = "MenuDepartments"
+        Me.MenuDepartments.Size = New System.Drawing.Size(196, 45)
+        Me.MenuDepartments.TabIndex = 37
         '
         'Label9
         '
@@ -811,9 +727,9 @@ Partial Class AdminLayout
         Me.lblcheckregister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblcheckregister.Location = New System.Drawing.Point(15, 13)
         Me.lblcheckregister.Name = "lblcheckregister"
-        Me.lblcheckregister.Size = New System.Drawing.Size(140, 16)
+        Me.lblcheckregister.Size = New System.Drawing.Size(122, 16)
         Me.lblcheckregister.TabIndex = 35
-        Me.lblcheckregister.Text = "      Check Register"
+        Me.lblcheckregister.Text = "      Departments"
         '
         'SideCheckRegister
         '
@@ -875,28 +791,17 @@ Partial Class AdminLayout
         Me.Controls.Add(Me.panelsettingdrop)
         Me.Controls.Add(Me.paneldropprofile)
         Me.Controls.Add(Me.Panel5)
-        Me.Controls.Add(Me.MenuExpenses)
         Me.Controls.Add(Me.SideExpenses)
         Me.Controls.Add(Me.SideCheckRegister)
-        Me.Controls.Add(Me.MenuCheckRegister)
         Me.Controls.Add(Me.SideReservation)
-        Me.Controls.Add(Me.MenuReservation)
         Me.Controls.Add(Me.SideReports)
-        Me.Controls.Add(Me.MenuReports)
         Me.Controls.Add(Me.SideEmployees)
-        Me.Controls.Add(Me.MenuEmployees)
         Me.Controls.Add(Me.SideCustomers)
-        Me.Controls.Add(Me.MenuCustomers)
         Me.Controls.Add(Me.SideProperties)
-        Me.Controls.Add(Me.MenuProperties)
         Me.Controls.Add(Me.SideAgents)
-        Me.Controls.Add(Me.MenuAgents)
         Me.Controls.Add(Me.SideCommissions)
-        Me.Controls.Add(Me.MenuCommissions)
         Me.Controls.Add(Me.SidePayments)
-        Me.Controls.Add(Me.MenuPayments)
         Me.Controls.Add(Me.SideInvoices)
-        Me.Controls.Add(Me.MenuInvoices)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -916,32 +821,25 @@ Partial Class AdminLayout
         Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        Me.MenuInvoices.ResumeLayout(False)
-        Me.MenuInvoices.PerformLayout()
-        Me.MenuPayments.ResumeLayout(False)
-        Me.MenuPayments.PerformLayout()
-        Me.MenuCommissions.ResumeLayout(False)
-        Me.MenuCommissions.PerformLayout()
-        Me.MenuCustomers.ResumeLayout(False)
-        Me.MenuCustomers.PerformLayout()
-        Me.MenuProperties.ResumeLayout(False)
-        Me.MenuProperties.PerformLayout()
-        Me.MenuAgents.ResumeLayout(False)
-        Me.MenuAgents.PerformLayout()
+        Me.MenuShifting.ResumeLayout(False)
+        Me.MenuShifting.PerformLayout()
+        Me.MenuLeave.ResumeLayout(False)
+        Me.MenuLeave.PerformLayout()
         Me.MenuReports.ResumeLayout(False)
         Me.MenuReports.PerformLayout()
         Me.MenuEmployees.ResumeLayout(False)
         Me.MenuEmployees.PerformLayout()
-        Me.MenuExpenses.ResumeLayout(False)
-        Me.MenuExpenses.PerformLayout()
-        Me.MenuReservation.ResumeLayout(False)
-        Me.MenuReservation.PerformLayout()
+        Me.MenuUsers.ResumeLayout(False)
+        Me.MenuUsers.PerformLayout()
+        Me.panelmenulast.ResumeLayout(False)
+        Me.MenuTimeLogs.ResumeLayout(False)
+        Me.MenuTimeLogs.PerformLayout()
         Me.paneldropprofile.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        Me.MenuCheckRegister.ResumeLayout(False)
-        Me.MenuCheckRegister.PerformLayout()
+        Me.MenuDepartments.ResumeLayout(False)
+        Me.MenuDepartments.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.pctrCompanyLogo, System.ComponentModel.ISupportInitialize).EndInit()
@@ -958,34 +856,26 @@ Partial Class AdminLayout
     Friend WithEvents lblCompanyName As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents MenuInvoices As System.Windows.Forms.Panel
+    Friend WithEvents MenuShifting As System.Windows.Forms.Panel
     Friend WithEvents SideInvoices As System.Windows.Forms.Panel
     Friend WithEvents SidePayments As System.Windows.Forms.Panel
-    Friend WithEvents MenuPayments As System.Windows.Forms.Panel
+    Friend WithEvents MenuLeave As System.Windows.Forms.Panel
     Friend WithEvents SideCommissions As System.Windows.Forms.Panel
-    Friend WithEvents MenuCommissions As System.Windows.Forms.Panel
     Friend WithEvents SideCustomers As System.Windows.Forms.Panel
-    Friend WithEvents MenuCustomers As System.Windows.Forms.Panel
     Friend WithEvents SideProperties As System.Windows.Forms.Panel
-    Friend WithEvents MenuProperties As System.Windows.Forms.Panel
     Friend WithEvents SideAgents As System.Windows.Forms.Panel
-    Friend WithEvents MenuAgents As System.Windows.Forms.Panel
     Friend WithEvents lblInvoices As System.Windows.Forms.Label
     Friend WithEvents SideReports As System.Windows.Forms.Panel
     Friend WithEvents MenuReports As System.Windows.Forms.Panel
     Friend WithEvents SideEmployees As System.Windows.Forms.Panel
     Friend WithEvents MenuEmployees As System.Windows.Forms.Panel
     Friend WithEvents SideExpenses As System.Windows.Forms.Panel
-    Friend WithEvents MenuExpenses As System.Windows.Forms.Panel
+    Friend WithEvents MenuUsers As System.Windows.Forms.Panel
     Friend WithEvents panelmenulast As System.Windows.Forms.Panel
     Friend WithEvents lblPayments As System.Windows.Forms.Label
-    Friend WithEvents lblCommissions As System.Windows.Forms.Label
-    Friend WithEvents lblAgents As System.Windows.Forms.Label
-    Friend WithEvents lblProperties As System.Windows.Forms.Label
     Friend WithEvents SideReservation As System.Windows.Forms.Panel
-    Friend WithEvents MenuReservation As System.Windows.Forms.Panel
+    Friend WithEvents MenuTimeLogs As System.Windows.Forms.Panel
     Friend WithEvents lblReservations As System.Windows.Forms.Label
-    Friend WithEvents lblCustomers As System.Windows.Forms.Label
     Friend WithEvents lblReports As System.Windows.Forms.Label
     Friend WithEvents lblEmployees As System.Windows.Forms.Label
     Friend WithEvents lblExpenses As System.Windows.Forms.Label
@@ -1013,7 +903,7 @@ Partial Class AdminLayout
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents lblUsernamedrop As System.Windows.Forms.Label
     Friend WithEvents lblcheckregister As System.Windows.Forms.Label
-    Friend WithEvents MenuCheckRegister As System.Windows.Forms.Panel
+    Friend WithEvents MenuDepartments As System.Windows.Forms.Panel
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents SideCheckRegister As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
